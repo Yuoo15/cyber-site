@@ -1,0 +1,116 @@
+.footer {
+    background-color: #050505;
+    color: white;
+    padding: 80px 20px 30px;
+    border-top: 1px solid rgba(136, 220, 41, 0.1);
+    font-family: "DM Sans", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr; /* Колонки разной ширины */
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.logo span {
+    color: #88DC29;
+}
+
+.description {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6;
+    max-width: 300px;
+}
+
+.links h3, .contacts h3 {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links li {
+    margin-bottom: 12px;
+}
+
+.links a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    color: #88DC29;
+}
+
+.contacts p {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contactBtn {
+    background: transparent;
+    border: 1px solid #88DC29;
+    color: #88DC29;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.contactBtn:hover {
+    background: #88DC29;
+    color: #000;
+}
+
+/* Нижняя часть */
+.bottom {
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+}
+
+.legal span {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* АДАПТИВ */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr; /* На мобилках всё в один столбик */
+        gap: 40px;
+        text-align: center;
+    }
+
+    .description {
+        margin: 0 auto;
+    }
+
+    .bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,78 @@
+.container {
+    width: 100%;
+    max-width: 1300px; /* Немного шире для навигации */
+    margin: 0 auto;
+    padding: 100px 40px;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+
+
+
+.h2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: clamp(30px, 5vw, 42px);
+    color: #E0E3E0;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Кастомизация Swiper */
+.mySwiper {
+    padding: 20px 0 60px 0 !important; /* Место снизу для точек пагинации */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Стили для стрелок */
+:global(.swiper-button-next),
+:global(.swiper-button-prev) {
+    color: #88DC29 !important; /* Твой фирменный зеленый */
+    transform: scale(0.7);
+}
+
+/* Стили для точек пагинации */
+:global(.swiper-pagination-bullet) {
+    background: rgba(255, 255, 255, 0.3) !important;
+    opacity: 1;
+}
+
+:global(.swiper-pagination-bullet-active) {
+    background: #88DC29 !important; /* Активная точка — зеленая */
+    width: 20px !important; /* Делаем её длиннее для красоты */
+    border-radius: 5px !important;
+    transition: 0.3s;
+}
+
+.slide_content {
+    height: 100%;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+    .container {
+        padding: 60px 20px;
+    }
+    
+    :global(.swiper-button-next),
+    :global(.swiper-button-prev) {
+        display: none !important; /* На мобилках стрелки мешают, лучше свайпать пальцем */
+    }
+}

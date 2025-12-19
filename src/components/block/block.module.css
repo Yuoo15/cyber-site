@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+.container{
+    padding: 16px;
+    background-color: #1B2121;
+    max-width: 305px;
+    height: auto;
+    border-radius: 24px;
+    padding: 50px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.avatar{
+    width: 123px;
+    height: 123px;
+    border-radius: 50%;
+    background-color: #88DC29;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:27px
+}
+
+.p{
+    text-align: center;
+    font-size: small;
+    color: #FFFFFF;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.h1{
+    font-family: "DM Sans", sans-serif;
+    font-size: medium;
+    font-weight: 24px;
+
+    color: #FFFFFF;
+    margin-bottom: 8px;
+    text-align: center;
+    margin: 0%;
+}
